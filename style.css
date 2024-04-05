@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+
+
+
+
+  button {
+    cursor: url('https://cdn.glitch.global/901fe2a6-c697-4c1d-ba02-ff535a3c59ba/%E6%9C%AA%E5%91%BD%E5%90%8D%E4%BD%9C%E5%93%81%2022.png?v=1709260780983'), auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px; /* 添加的空隙 */
+    font-family: 'MouseFont', sans-serif;
+    transition: transform 0.3s ease; /* 平滑变换效果 */
+  }
+
+  
+  button:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大10% */
+  }
+  
+  
+  
+  html{
+    cursor: url(https://cdn.glitch.global/901fe2a6-c697-4c1d-ba02-ff535a3c59ba/%E6%9C%AA%E5%91%BD%E5%90%8D%E4%BD%9C%E5%93%81%2022.png?v=1709260780983), auto;
+}
+
+@font-face {
+    font-family: 'MouseFont';
+    src: url('https://cdn.glitch.global/3490dcca-0fa7-448d-bd0a-9262d7b87e86/mouse.otf?v=1702064290774') format('opentype');
+}
+
+body {
+    font-family: 'MouseFont', sans-serif;
+}
