@@ -3,3 +3,5 @@ Here's the webiste line!
 
 check the notion page for reflection and more>_<: 
 https://celestial-asphalt-2d0.notion.site/project3-24-04-05-3b112f9e90f54eedbbf841bd14125d23?pvs=4
+
+FYI: It should be including background music, if not show in Google Chrome, please open in FireFox!
