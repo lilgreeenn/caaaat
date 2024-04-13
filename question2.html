@@ -6,7 +6,8 @@
 <title>Question 2</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<audio id="button-sound" src="button-3.mp3"></audio>
+
+
 
 <body>
     <style>
@@ -16,7 +17,13 @@
           background-position: center calc(50% - 50px); /* Center the background image */
           background-repeat: no-repeat; /* Do not repeat the image */
         }
+
+        body {
+          cursor: url('default.png'), auto;
+  }
       </style>
+
+
 
 <div class="container">
   <h2>Question 2</h2>
@@ -26,5 +33,21 @@
   <button onclick="chooseOption(2, 'C')">C. Not interested in the toy, prefers interacting with you.</button>
 </div>
 <script src="script.js"></script>
+<audio id="button-sound" src="button-3.mp3"></audio>
+
+
+
+<script>
+document.addEventListener("click", function() {
+        document.getElementById("button-sound").play();
+    });
+
+    window.onload = function() {
+    const cursorImage = localStorage.getItem("cursorImage");
+    if (cursorImage) {
+      document.body.style.cursor = `url('${cursorImage}'), auto`;
+    }
+  };
+</script>
 </body>
 </html>

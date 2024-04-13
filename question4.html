@@ -6,15 +6,21 @@
 <title>Question 4</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<audio id="button-sound" src="button-3.mp3"></audio>
+
+
 
 <style>
     body {
       background-image: url("4.PNG");
-      background-size: cover; /* Cover the entire page */
-      background-position: center calc(50% - 30px); /* Center the background image */ /* Center the background image */
-      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; 
+      background-position: center calc(50% - 30px); 
+      background-repeat: no-repeat; 
     }
+
+    body {
+          cursor: url('default.png'), auto;
+        }
+
   </style>
 
 <body>
@@ -27,5 +33,22 @@
   <button onclick="chooseOption(4, 'C')">C. In high places, like the top of a shelf or cupboard.</button>
 </div>
 <script src="script.js"></script>
+<audio id="button-sound" src="button-3.mp3"></audio>
+
+<script>
+document.addEventListener("click", function() {
+        document.getElementById("button-sound").play();
+    });
+
+    window.onload = function() {
+    const cursorImage = localStorage.getItem("cursorImage");
+    if (cursorImage) {
+      document.body.style.cursor = `url('${cursorImage}'), auto`;
+    }
+  };
+
+
+</script>
+
 </body>
 </html>

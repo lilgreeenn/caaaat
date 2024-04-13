@@ -8,21 +8,18 @@
   }
   
 
-
-
-
   button {
     cursor: url('https://cdn.glitch.global/901fe2a6-c697-4c1d-ba02-ff535a3c59ba/%E6%9C%AA%E5%91%BD%E5%90%8D%E4%BD%9C%E5%93%81%2022.png?v=1709260780983'), auto;
     padding: 10px 20px;
     font-size: 16px;
-    margin: 5px; /* 添加的空隙 */
+    margin: 5px; 
     font-family: 'MouseFont', sans-serif;
-    transition: transform 0.3s ease; /* 平滑变换效果 */
+    transition: transform 0.3s ease; 
   }
 
   
   button:hover {
-    transform: scale(1.1); /* 鼠标悬停时放大10% */
+    transform: scale(1.1);
   }
   
   
@@ -38,4 +35,28 @@
 
 body {
     font-family: 'MouseFont', sans-serif;
+}
+
+
+label, select {
+  font-family: 'MouseFont', sans-serif;
+}
+
+
+
+
+
+#catAge {
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#ageInfo {
+  color: #555;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-top: 5px;
 }

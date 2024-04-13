@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<audio id="button-sound" src="button-3.mp3"></audio>
+
+
 
 <style>
     body {
@@ -16,6 +17,12 @@
       background-position: center calc(50% - 30px); 
       background-repeat: no-repeat; 
     }
+
+    body {
+          cursor: url('default.png'), auto;
+        }
+
+
   </style>
 
 
@@ -28,5 +35,24 @@
   <button onclick="chooseOption(7, 'C')">C. Watches you, seeming to judge your work.</button>
 </div>
 <script src="script.js"></script>
+
+<audio id="button-sound" src="button-3.mp3"></audio>
+
+<script>
+document.addEventListener("click", function() {
+        document.getElementById("button-sound").play();
+    });
+
+    window.onload = function() {
+    const cursorImage = localStorage.getItem("cursorImage");
+    if (cursorImage) {
+      document.body.style.cursor = `url('${cursorImage}'), auto`;
+    }
+  };
+
+
+</script>
+
+
 </body>
 </html>

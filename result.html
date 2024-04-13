@@ -6,11 +6,11 @@
 <title>测试结果</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<audio id="button-sound" src="button-3.mp3"></audio>
+
 <style>
     body {
       background-image: url("Cat\ Dancing\ Meme\ Dancing\ GIF\ -\ Cat\ Dancing\ Meme\ Dancing\ Cat\ -\ Discover\ &\ Share\ GIFs.gif");
-      background-size: 140%; /* 或使用 100% 100% 以确保背景图像覆盖整个页面 */
+      background-size: 140%; 
       background-position: calc(50% - 200px) calc(50% + 50px); 
       background-repeat: no-repeat;
     }
@@ -21,6 +21,27 @@
   <h1 id="result-text"></h1>
   <button onclick="window.location.href='index.html'">RESTART THE QUIZ</button>
 </div>
+
+<div id="player">
+  <audio controls autoplay hidden loop>
+   <source src="happyhappyhappy.mp3" type="audio/mpeg">
+             
+  </audio>
+</div>
+
+
 <script src="script.js"></script>
+
+
+
+<audio id="button-sound" src="button-3.mp3"></audio>
+
+<script>
+document.addEventListener("click", function() {
+        document.getElementById("button-sound").play();
+    });
+</script>
+
+
 </body>
 </html>

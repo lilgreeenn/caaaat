@@ -6,17 +6,27 @@
 <title>Question 1</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<audio id="button-sound" src="button-3.mp3"></audio>
+
 
 <body>
+
+
+
     <style>
         body {
           background-image: url("1.GIF");
-          background-size: cover; /* Cover the entire page */
-          background-position: center calc(50% - 30px); /* Center the background image */
-          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; 
+          background-position: center calc(50% - 30px); 
+          background-repeat: no-repeat; 
         }
+
+        body {
+          cursor: url('default.png'), auto;
+  }
       </style>
+
+
+
 <div class="container">
   <h2>Question 1</h2>
   <h1>How does your cat react when you come home?</h1>
@@ -24,6 +34,27 @@
   <button onclick="chooseOption(1, 'B')">B. Looks up, then goes back to what they were doing.</button>
   <button onclick="chooseOption(1, 'C')">C. Completely ignores me:(, or continues sleeping.</button>
 </div>
+
+
 <script src="script.js"></script>
+
+
+<audio id="button-sound" src="button-3.mp3"></audio>
+
+<script>
+
+window.onload = function() {
+    const cursorImage = localStorage.getItem("cursorImage");
+    if (cursorImage) {
+      document.body.style.cursor = `url('${cursorImage}'), auto`;
+    }
+  };
+
+
+document.addEventListener("click", function() {
+        document.getElementById("button-sound").play();
+    });
+</script>
+
 </body>
 </html>
