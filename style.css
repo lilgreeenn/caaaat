@@ -60,3 +60,18 @@ label, select {
   border-radius: 4px;
   margin-top: 5px;
 }
+
+
+#result-text {  /*animation*/
+  color: rgb(255, 0, 106);
+  animation: pulseAnimation 2s infinite;   
+}
+
+@keyframes pulseAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
